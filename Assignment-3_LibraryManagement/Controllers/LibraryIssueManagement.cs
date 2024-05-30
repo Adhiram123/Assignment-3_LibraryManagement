@@ -1,4 +1,4 @@
-﻿using Assignment_3_LIbraryManagementSystem.Entites;
+﻿using Assignment_3_LibraryManagement.Entity;
 using Assignment_3_LIbraryManagementSystem.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
@@ -14,10 +14,10 @@ namespace Assignment_3_LIbraryManagementSystem.Controllers
         public string URI = "https://localhost:8081";
         public string PrimaryKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
         public string DatabaseName = "LibraryManagement";
-        public string ContainerName = "Issue";
+        public string ContainerName = "Book";
 
         public Container Container;
-        public Container Container1;
+      
 
 
 
@@ -27,7 +27,7 @@ namespace Assignment_3_LIbraryManagementSystem.Controllers
             BookEntity book = new BookEntity();
 
 
-            var existingBook = Container1.GetItemLinqQueryable<BookEntity>(true).Where(q => q.UId == book.UId && q.DocumentType == "book" && q.IsIssued == true && q.Active == true && q.Archive == false).FirstOrDefault();
+            var existingBook = Container.GetItemLinqQueryable<BookEntity>(true).Where(q => q.UId == book.UId && q.DocumentType == "book" && q.IsIssued == true && q.Active == true && q.Archive == false).FirstOrDefault();
 
 
             //1.Create Obj of entity and map  all the fields from model to entity
@@ -139,20 +139,11 @@ namespace Assignment_3_LIbraryManagementSystem.Controllers
             return container;
 
         }
-        private Container GetContainer1()
-        {
-            CosmosClient cosmosClient = new CosmosClient(URI, PrimaryKey);
-            Database database = cosmosClient.GetDatabase(DatabaseName);
-            Container container = database.GetContainer("Book");
-
-            return container;
-
-        }
 
         public LibraryIssueManagement()
         {
             Container = GetContainer();
-            Container1 = GetContainer();
+            
 
         }
 

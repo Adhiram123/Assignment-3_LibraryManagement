@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace Assignment_3_LIbraryManagementSystem.Entites
+namespace Assignment_3_LibraryManagement.Entity
 {
-    public class BookEntity
+    public class SuperEntity
     {
         [JsonProperty(PropertyName = "id", NullValueHandling = NullValueHandling.Ignore)]
 
@@ -35,7 +35,9 @@ namespace Assignment_3_LIbraryManagementSystem.Entites
 
         [JsonProperty(PropertyName = "archive", NullValueHandling = NullValueHandling.Ignore)]
         public bool Archive { get; set; }
-
+    }
+    public class BookEntity() : SuperEntity
+    {
         [JsonProperty(PropertyName = "title", NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
@@ -50,8 +52,39 @@ namespace Assignment_3_LIbraryManagementSystem.Entites
 
         [JsonProperty(PropertyName = "isIssued", NullValueHandling = NullValueHandling.Ignore)]
         public bool IsIssued { get; set; }
+    }
+    public class MemberEntity() :SuperEntity
+    {
 
+        [JsonProperty(PropertyName = "name", NullValueHandling = NullValueHandling.Ignore)]
+        public string Name { get; set; }
 
+        [JsonProperty(PropertyName = "dateOfBirth", NullValueHandling = NullValueHandling.Ignore)]
+        public DateTime DateOfBirth { get; set; }
+
+        [JsonProperty(PropertyName = "email", NullValueHandling = NullValueHandling.Ignore)]
+        public string Email { get; set; }
+    }
+
+    public class IssueEntity() : SuperEntity
+    {
+
+        [JsonProperty(PropertyName = "bookID", NullValueHandling = NullValueHandling.Ignore)]
+        public string BookId { get; set; }
+
+        [JsonProperty(PropertyName = "memberId", NullValueHandling = NullValueHandling.Ignore)]
+        public string MemberId { get; set; }
+
+        [JsonProperty(PropertyName = "issueDate", NullValueHandling = NullValueHandling.Ignore)]
+        public DateTime IssueDate { get; set; }
+
+        [JsonProperty(PropertyName = "returnDate", NullValueHandling = NullValueHandling.Ignore)]
+        public DateTime? Returndate { get; set; }
+
+        [JsonProperty(PropertyName = "isreturned", NullValueHandling = NullValueHandling.Ignore)]
+
+        public bool IsReturned { get; set; }
 
     }
+
 }

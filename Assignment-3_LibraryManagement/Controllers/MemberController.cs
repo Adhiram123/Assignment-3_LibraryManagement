@@ -1,4 +1,5 @@
-﻿using Assignment_3_LIbraryManagementSystem.Entites;
+﻿
+using Assignment_3_LibraryManagement.Entity;
 using Assignment_3_LIbraryManagementSystem.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
@@ -12,7 +13,7 @@ namespace Assignment_3_LIbraryManagementSystem.Controllers
         public string URI = "https://localhost:8081";
         public string PrimaryKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
         public string DatabaseName = "LibraryManagement";
-        public string ContainerName = "Member";
+        public string ContainerName = "Book";
 
         public Container Container;
 
