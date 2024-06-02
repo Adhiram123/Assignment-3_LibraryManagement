@@ -1,0 +1,14 @@
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\bin\Debug\net8.0\Assignment_2.exe
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\bin\Debug\net8.0\Assignment_2.deps.json
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\bin\Debug\net8.0\Assignment_2.runtimeconfig.json
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\bin\Debug\net8.0\Assignment_2.dll
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\bin\Debug\net8.0\Assignment_2.pdb
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\Assignment_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\Assignment_2.AssemblyInfoInputs.cache
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\Assignment_2.AssemblyInfo.cs
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\Assignment_2.csproj.CoreCompileInputs.cache
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\Assignment_2.dll
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\refint\Assignment_2.dll
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\Assignment_2.pdb
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\Assignment_2.genruntimeconfig.cache
+C:\Users\adiram\Desktop\vi\Assignment_2\Assignment_2\obj\Debug\net8.0\ref\Assignment_2.dll
