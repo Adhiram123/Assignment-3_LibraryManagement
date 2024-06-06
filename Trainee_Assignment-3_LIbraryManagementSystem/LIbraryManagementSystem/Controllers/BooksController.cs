@@ -13,10 +13,10 @@ namespace Assignment_3_LIbraryManagementSystem.Controllers
       [ApiController]
     public class BooksController : Controller
     {
-        public string URI = "https://localhost:8081";
-        public string PrimaryKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
-        public string DatabaseName = "LibraryManagement";
-        public string ContainerName = "Book";
+        public string URI = "";
+        public string PrimaryKey = "";
+        public string DatabaseName = "";
+        public string ContainerName = "";
 
         public Container Container;
 
@@ -35,7 +35,7 @@ namespace Assignment_3_LIbraryManagementSystem.Controllers
             //2.Assign values to mandatory fields
             book.Id = Guid.NewGuid().ToString();
             book.UId = book.Id;
-            book.DocumentType = "book";
+            book.DocumentType = "";
             book.CreatedBy = "";
             book.CreatedOn = DateTime.Now;
             book.UpdatedBy = "";

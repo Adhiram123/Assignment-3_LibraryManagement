@@ -11,13 +11,13 @@ namespace Assignment_3_LIbraryManagementSystem.Controllers
     [ApiController]
     public class LibraryIssueManagement : Controller
     {
-        public string URI = "https://localhost:8081";
-        public string PrimaryKey = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
-        public string DatabaseName = "LibraryManagement";
-        public string ContainerName = "Issue";
+        public string URI = "";
+        public string PrimaryKey = "";
+        public string DatabaseName = "";
+        public string ContainerName = "";
 
         public Container Container;
-        public Container Container1;
+       // public Container Container1;
 
 
 
